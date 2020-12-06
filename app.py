@@ -7,7 +7,7 @@ FLASK_DEBUG = 1
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/https://192.168.99.103:8443/console")
 def print_hello():
     return "Hello from the app, its working !"
     # return redirect(url_for('/'))
@@ -19,4 +19,4 @@ def print_hello():
 
 if __name__ == "__main__":
     # print_hello()
-    app.run(host="https://192.168.99.103:8443")
+    app.run()
