@@ -3,6 +3,8 @@ import os
 from flask import Flask, redirect, url_for
 # import tkinter as tk
 
+FLASK_DEBUG = 1
+
 app = Flask(__name__)
 
 @app.route("/")
