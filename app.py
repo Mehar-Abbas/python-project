@@ -1,14 +1,14 @@
 from flask import Flask
 import tkinter as tk
 
+
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/https://tic-tac-toe-tic-tac-toe.192.168.99.103.nip.io')
 
 def print_hello():
-    # Use a breakpoint in the code line below to debug your script.
-    return "Hello from the app"  # Press Ctrl+F8 to toggle the breakpoint.
+    return "Hello from the app"
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print_hello()
     app.run()
