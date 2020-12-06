@@ -7,10 +7,10 @@ FLASK_DEBUG = 1
 
 app = Flask(__name__)
 
-@app.route("/https://192.168.99.103:8443")
+@app.route("/")
 def print_hello():
-    return "Hello from the app, its working !"
-    # return redirect(url_for('/'))
+    print("Hello from the app, its working !")
+    return redirect(url_for('/https://192.168.99.103:8443'))
 
 #
 # def print_hello():
