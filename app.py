@@ -6,7 +6,7 @@ from flask import Flask, redirect, url_for
 app = Flask(__name__)
 
 FLASK_DEBUG = 1
-FLASK_APP = app.py
+# FLASK_APP = app.py
 
 @app.route("/")
 def print_hello():
