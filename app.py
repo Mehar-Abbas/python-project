@@ -3,14 +3,15 @@ import os
 from flask import Flask, redirect, url_for
 # import tkinter as tk
 
-FLASK_DEBUG = 1
-
 app = Flask(__name__)
+
+FLASK_DEBUG = 1
+FLASK_APP = app.py
 
 @app.route("/")
 def print_hello():
-    print("Hello from the app, its working !")
-    return redirect(url_for('/http://tic-tac-toe-tic-tac-toe.192.168.99.103.nip.io/'))
+    # print("Hello from the app, its working !")
+    return "Hello from the app, its working !"
 
 #
 # def print_hello():
