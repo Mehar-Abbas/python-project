@@ -19,5 +19,5 @@ def print_hello():
 #     return   # Press Ctrl+F8 to toggle the breakpoint.
 
 if __name__ == "__main__":
-    # print_hello()
+    print_hello()
     app.run(debug=True)
