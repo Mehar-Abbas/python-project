@@ -1,6 +1,6 @@
 
 import os
-from flask import Flask, redirect, url_for
+from flask import Flask
 # import tkinter as tk
 
 app = Flask(__name__)
@@ -10,7 +10,7 @@ FLASK_DEBUG = 1
 
 @app.route("/")
 def print_hello():
-    # print("Hello from the app, its working !")
+    print("Hello from the app, its working !")
     return "Hello from the app, its working !"
 
 #
