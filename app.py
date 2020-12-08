@@ -11,7 +11,7 @@ FLASK_DEBUG = 1
 @app.route("/")
 def print_hello():
     print("Hello from the app, its working !")
-    return "Hello from the app, its working !"
+    return "<h1>Hello from the app, its working !</hi>"
 
 #
 # def print_hello():
@@ -20,4 +20,4 @@ def print_hello():
 
 if __name__ == "__main__":
     print_hello()
-    app.run(debug=True)
+    app.run(host="https://tic-tac-toe-tic-tac-toe.192.168.99.103.nip.io/")
