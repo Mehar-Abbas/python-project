@@ -1,6 +1,6 @@
 
 import os
-from flask import Flask
+from flask import Flask, render_template
 # import tkinter as tk
 
 app = Flask(__name__)
@@ -11,7 +11,7 @@ FLASK_DEBUG = 1
 @app.route("/")
 def print_hello():
     # print("Hello from the app, its working !")
-    return "<h1>Hello from the app, its working !</hi>"
+    return render_template("index.html")
 
 @app.route("/about")
 def print_about():
@@ -25,4 +25,4 @@ def print_about():
 
 if __name__ == "__main__":
     # print_hello()
-    app.run(host="172.17.0.8", port=8080)
+    app.run(debug=True)
