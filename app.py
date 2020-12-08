@@ -10,8 +10,13 @@ FLASK_DEBUG = 1
 
 @app.route("/")
 def print_hello():
-    print("Hello from the app, its working !")
+    # print("Hello from the app, its working !")
     return "<h1>Hello from the app, its working !</hi>"
+
+@app.route("/about")
+def print_about():
+    # print("Hello from the app, its working !")
+    return "<h1>Hello from the app, its working on th e about page !</hi>"
 
 #
 # def print_hello():
@@ -19,5 +24,5 @@ def print_hello():
 #     return   # Press Ctrl+F8 to toggle the breakpoint.
 
 if __name__ == "__main__":
-    print_hello()
-    app.run(host="https://tic-tac-toe-tic-tac-toe.192.168.99.103.nip.io/")
+    # print_hello()
+    app.run(host="172.17.0.8", port=8080)
