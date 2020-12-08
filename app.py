@@ -25,4 +25,4 @@ def print_about():
 
 if __name__ == "__main__":
     # print_hello()
-    app.run(debug=True)
+    app.run(host="172.30.229.222", port=8080)
