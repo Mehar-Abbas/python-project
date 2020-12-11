@@ -9,7 +9,7 @@ FLASK_DEBUG = 1
 
 @app.route("/")
 def print_hello():
-    # print("Hello from the app, its working !")
+    print("Hello from the app, its working !")
     return render_template("index.html")
 
 if __name__ == "__main__":
