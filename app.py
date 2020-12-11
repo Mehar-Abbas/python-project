@@ -1,6 +1,5 @@
 import os
 from flask import Flask, render_template
-from tkinter import *
 
 
 # the logic of Tic Tac Toe ------------------------------------------------
