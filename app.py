@@ -12,16 +12,6 @@ def print_hello():
     # print("Hello from the app, its working !")
     return render_template("index.html")
 
-@app.route("/about")
-def print_about():
-    # print("Hello from the app, its working !")
-    return "<h1>Hello from the app, its working on th e about page !</hi>"
-
-#
-# def print_hello():
-#     # Use a breakpoint in the code line below to debug your script.
-#     return   # Press Ctrl+F8 to toggle the breakpoint.
-
 if __name__ == "__main__":
     # print_hello()
     app.run(host="0.0.0.0", port=8080)
